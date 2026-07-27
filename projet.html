@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bake and Bloom</title>
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <header class="entete">
+    <h1 class="logo">Bake and Bloom</h1>
+    <div class="boutons-entete">
+      <button id="btnPanier" class="bouton-icone">🛒 <span id="nombrePanier">0</span></button>
+    </div>
+  </header>
+
+  <section class="accueil">
+    <p class="petit-texte">Boutique en ligne</p>
+    <h2>Macarons, salés & petits fours</h2>
+    <p class="texte-intro">Boutique traiteur maison, simple, gourmande et faite avec amour.</p>
+    <a href="#produits" class="bouton">Voir les produits</a>
+  </section>
+
+  <section id="produits" class="section-produits">
+    <h3>Nos produits</h3>
+
+    <h4 class="categorie">Salé</h4>
+    <div class="liste-produits">
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/q7bCFHyp/Capture-d-e-cran-2026-07-27-a-23-14-23.png" alt="Mini-burgers">
+        <h4>Mini-burgers poulet</h4>
+        <p>100 DA</p>
+        <button onclick="ajouterAuPanier('Mini-burgers poulet', 100)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/q7bCFHyp/Capture-d-e-cran-2026-07-27-a-23-14-23.png" alt="Mini-burgers viande">
+        <h4>Mini-burgers viande</h4>
+        <p>150 DA</p>
+        <button onclick="ajouterAuPanier('Mini-burgers viande', 150)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/441Wxm6X/E77575FA-A423-4B97-893F-75848EB5D00E.jpg" alt="Quiches aux oignons">
+        <h4>Quiches aux oignons</h4>
+        <p>90 DA</p>
+        <button onclick="ajouterAuPanier('Quiches aux oignons', 90)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/7ZtcYfyG/69119F90-DAA9-488A-8B9F-AC7FD7F096FD.jpg" alt="Rouleaux prestige au poulet">
+        <h4>Rouleaux prestige au poulet</h4>
+        <p>200 DA</p>
+        <button onclick="ajouterAuPanier('Rouleaux prestige au poulet', 200)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/brb811qs/Capture-d-e-cran-2026-07-27-a-22-31-05.png" alt="Mini-pizza">
+        <h4>Mini-pizza</h4>
+        <p>40 DA</p>
+        <button onclick="ajouterAuPanier('Mini-pizza', 40)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://www.lafourneedoree.fr/wp-content/uploads/2025/12/minis-burgers-fromage-frais-avocat-saumon-fume-1.png" alt="Mini-burger au saumon">
+        <h4>Mini-burger au saumon</h4>
+        <p>200 DA</p>
+        <button onclick="ajouterAuPanier('Mini-burger au saumon', 200)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/fbrhF8LT/Capture-d-e-cran-2026-07-27-a-22-30-21.png" alt="Verrines crispy">
+        <h4>Verrines crispy</h4>
+        <p>200 DA</p>
+        <button onclick="ajouterAuPanier('Verrines crispy', 200)">Ajouter</button>
+      </article>
+
+    </div>
+
+    <h4 class="categorie">Sucré</h4>
+    <div class="liste-produits">
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/L5gwrSWT/Capture-d-e-cran-2026-07-27-a-22-29-13.png" alt="Tarte au citron">
+        <h4>Tarte au citron</h4>
+        <p>100 DA</p>
+        <button onclick="ajouterAuPanier('Tarte au citron', 100)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/vZKqwkWS/E36690B9-2B73-4013-B9FB-12E4FC7BFAA7.jpg" alt="Tarte aux fruits">
+        <h4>Tarte aux fruits</h4>
+        <p>150 DA</p>
+        <button onclick="ajouterAuPanier('Tarte aux fruits', 150)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://i.postimg.cc/V6WWvVCm/Capture-d-e-cran-2026-07-27-a-22-28-34.png" alt="Tarte au chocolat">
+        <h4>Tarte au chocolat</h4>
+        <p>150 DA</p>
+        <button onclick="ajouterAuPanier('Tarte au chocolat', 150)">Ajouter</button>
+      </article>
+
+      <article class="produit">
+        <img src="https://scontent.falg6-2.fna.fbcdn.net/v/t1.15752-9/750423961_870577465766304_1913285982103371375_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=GxxXmrEGUoYQ7kNvwE2GTJo&_nc_oc=AdptFksKZZ2K7ASH6U_WJRylzIkO37it5bE8EtbDiT4wcbJ6V62nRKeJIeUBkTnPUQw&_nc_zt=23&_nc_ht=scontent.falg6-2.fna&_nc_ss=7baaf&oh=03_Q7cD5wEanJ32nNUZucpDmL98OMQ6YPXWW2tWb78qXLFKdkYitA&oe=6A84A606" alt="Macarons">
+        <h4>Macarons</h4>
+        <p>100 DA</p>
+        <button onclick="ajouterAuPanier('Macarons', 100)">Ajouter</button>
+      </article>
+
+    </div>
+  </section>
+
+  <div id="panier" class="panneau-panier">
+    <h3>Mon panier</h3>
+    <ul id="listePanier"></ul>
+    <p id="totalPanier">Total : 0 DA</p>
+  </div>
+ <section class="a-propos">
+    <h3>À propos</h3>
+    <p>Bake and Bloom propose des douceurs artisanales pour vos commandes, événements et petits plaisirs du quotidien.</p>
+  </section>
+  <footer class="pied-de-page">
+    <p>Suivez-nous sur Instagram pour voir plus de photos et les nouveautés</p>
+    <a href="https://www.instagram.com/bake_and_bloom_dz" class="bouton bouton-clair" target="_blank" rel="noopener">
+      Ouvrir Instagram
+    </a>
+    <p class="copyright">© 2026 Bake and Bloom</p>
+  </footer>
+
+  <script src="projet.js"></script>
+</body>
+</html>
